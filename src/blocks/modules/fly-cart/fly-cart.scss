@@ -1,0 +1,145 @@
+.fly-cart {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+    width: 100%;
+    max-width: none;
+    height: calc(100dvh - 60px);
+    padding-bottom: 64px;
+    overflow-y: scroll;
+
+    @media (min-width: 1024px) {
+        width: auto;
+        max-width: 384px;
+        height: auto;
+        top: 160px;
+        padding: 0;
+    }
+
+    &._visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:after {
+        @media (min-width: 1024px) {
+            content: '';
+            position: fixed;
+            left: 0;
+            top: 160px;
+            right: 0;
+            bottom: 0;
+            background: rgba(34, 36, 39, 0.20);
+            z-index: -1;
+            pointer-events: none;
+        }
+    }
+
+    &__inner {
+        background-color: #fff;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid #E4E4E7;
+
+        &-pic {
+            flex-shrink: 0;
+            width: 56px;
+            margin-right: 16px;
+        }
+
+        &-title {
+            color: #222427;
+            /* Text/14 med */
+            font-family: 'TT Norms Pro';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 18.2px */
+            margin-bottom: 4px;
+            text-decoration: none;
+            display: block;
+        }
+
+        &-category {
+            color: #5E6062;
+            /* Caption/12 med */
+            font-family: 'TT Norms Pro';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 15.6px */
+            opacity: 0.6;
+        }
+
+        &-price {
+            color: #222427;
+            /* Text/14 med */
+            font-family: 'TT Norms Pro';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 18.2px */
+            margin-bottom: 10px;
+        }
+
+        &-content {
+            padding-right: 12px;
+            margin-right: auto;
+        }
+
+        &-values {
+            width: 80px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__counter {
+        display: flex;
+        align-items: center;
+
+        &-action {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+
+        &-value {
+            color: #222427;
+            font-family: 'TT Norms Pro';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
+            width: 24px;
+            margin: 0 4px;
+            text-align: center;
+        }
+    }
+
+    &__bottom {
+        padding: 24px;
+    }
+
+    &__total {
+        color: #222427;
+        /* Title/16 med */
+        font-family: 'TT Norms Pro';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 20.8px */
+        margin-bottom: 20px;
+
+        &-value {
+            margin-left: 12px;
+        }
+    }
+}

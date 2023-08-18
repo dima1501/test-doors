@@ -1,0 +1,16 @@
+.popup.js-drop#callback-popup
+    .popup__inner 
+        svg.popup__closer.js-popup-close
+            use(xlink:href="img/sprites/sprite.svg#icon-closer")
+        .popup__title Заполните данные и мы свяжемся с вами в рабочее время и ответим на все интересующие вопросы
+        form.popup__form.js-form
+            .popup__form-line
+                input(type="text" placeholder="Имя*" required).styled-input
+            .popup__form-line
+                input(type="tel" placeholder="Телефон*" required).styled-input
+            .popup__checkbox
+                .styled-checkbox 
+                    input(type="checkbox" checked required).styled-checkbox__input#user-agree
+                    label(for="user-agree").styled-checkbox__label Даю свое согласие на обработку персональных данных
+            .popup__btn 
+                button(type="submit").btn.btn--green Заказать звонок

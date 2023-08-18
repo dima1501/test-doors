@@ -1,4 +1,28 @@
-h1, h2, h3, h4, h5, h6, ul {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,li {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: #5a3060;
+}
+
+.mobile-hidden {
+    display: none;
+    @media (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.mobile-visible {
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }

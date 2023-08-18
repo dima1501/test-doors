@@ -1,0 +1,67 @@
+header.header
+    .header__row.header__row--main
+        .header__cell.header__cell--small.header__cell--logo
+            .header__logo
+                svg.header__logo-pic
+                    use(xlink:href="img/sprites/sprite.svg#logo")
+                p.header__logo-text Интернет-магазин дверей</br> в Нижнем Новгороде
+        .header__cell.header__cell--complex
+            .header__cell-item
+                .header__search
+                    svg.header__search-icon
+                        use(xlink:href="img/sprites/sprite.svg#icon-search")
+                    input(type="text" placeholder="Поиск").header__search-input
+            .header__cell-item
+                .header__address
+                    svg.header__address-icon
+                        use(xlink:href="img/sprites/sprite.svg#icon-geo")
+                    .header__address-text Нижний Новгород, ул. Уличная, 1, оф. 15
+        .header__cell.header__cell--small.header__cell--contacts
+            .header__contacts
+                .header__contacts-inner
+                    a(href="#").header__social
+                        svg.header__social-icon
+                            use(xlink:href="img/sprites/sprite.svg#icon-tg")
+                    a(href="#").header__social
+                        svg.header__social-icon
+                            use(xlink:href="img/sprites/sprite.svg#icon-wa")
+                    a(href="tel:88312199781").header__phone 8 (831) 219-97-81
+                a(href="#" data-toggle="callback-popup").header__callback Заказать звонок
+
+    .header__row.header__row--bottom
+        .header__cell.header__cell--small.header__cell--catalog
+            .header__catalog 
+                a(href="#").header__catalog-btn
+                    img(src="img/svg/icon-catalog.svg", alt="").header__catalog-icon
+                    .header__catalog-name Каталог
+                p.header__catalog-note Более 3000 товаров
+        .header__cell.header__cell--menu
+            nav.header__nav
+                ul.header__nav-list
+                    li.mobile-hidden
+                        a(href="#").header__nav-link Акции
+                    li 
+                        a(href="#").header__nav-link доставка и Установка
+                    li 
+                        a(href="#").header__nav-link Оплата
+                    li 
+                        a(href="#").header__nav-link Сертификаты
+                    li 
+                        a(href="#").header__nav-link О нас
+                    li 
+                        a(href="#").header__nav-link Контакты
+                    li.mobile-visible
+                        a(href="#" data-toggle="callback-popup").btn.btn--transp.btn--small Заказать звонок
+
+        .header__cell.header__cell--small.header__cell--links
+            .header__links
+                a(href="#" data-count='3').header__links-item
+                    img(src="img/svg/icon-compare.svg", alt="").header__links-icon
+                a(href="#").header__links-item
+                    img(src="img/svg/icon-favorites.svg", alt="").header__links-icon
+                a(href="#" data-toggle="fly-cart" data-count='14').header__links-item.header__links-item--cart
+                    img(src="img/svg/icon-cart.svg", alt="").header__links-icon
+                a(href="#").header__links-item
+                    img(src="img/svg/icon-user.svg", alt="").header__links-icon
+
+

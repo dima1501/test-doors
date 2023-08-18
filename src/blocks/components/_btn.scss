@@ -1,0 +1,43 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &--green {
+        background: #8BBF1F;
+        color: #fff;
+        text-align: center;
+        font-family: 'TT Norms Pro';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 19.5px */
+    }
+
+    &--transp {
+        color: #222427;
+        background-color: #fff;
+        border: 1px solid rgba(139, 191, 31, 0.40);
+        color: var(--text-primary-text, #222427);
+        /* Text/15 med */
+        font-family: 'TT Norms Pro';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 19.5px */
+    }
+
+    &--small {
+        padding: 12px 20px;
+    }
+
+    &:disabled {
+        background-color: #ccc;
+        pointer-events: none;
+    }
+}

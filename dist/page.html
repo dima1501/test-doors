@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Page</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__row header__row--main">
+        <div class="header__cell header__cell--small header__cell--logo">
+          <div class="header__logo">
+            <svg class="header__logo-pic">
+              <use xlink:href="img/sprites/sprite.svg#logo"></use>
+            </svg>
+            <p class="header__logo-text">Интернет-магазин дверей</br> в Нижнем Новгороде</p>
+          </div>
+        </div>
+        <div class="header__cell header__cell--complex">
+          <div class="header__cell-item">
+            <div class="header__search">
+              <svg class="header__search-icon">
+                <use xlink:href="img/sprites/sprite.svg#icon-search"></use>
+              </svg>
+              <input class="header__search-input" type="text" placeholder="Поиск">
+            </div>
+          </div>
+          <div class="header__cell-item">
+            <div class="header__address">
+              <svg class="header__address-icon">
+                <use xlink:href="img/sprites/sprite.svg#icon-geo"></use>
+              </svg>
+              <div class="header__address-text">Нижний Новгород, ул. Уличная, 1, оф. 15</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__cell header__cell--small header__cell--contacts">
+          <div class="header__contacts">
+            <div class="header__contacts-inner"><a class="header__social" href="#">
+                <svg class="header__social-icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon-tg"></use>
+                </svg></a><a class="header__social" href="#">
+                <svg class="header__social-icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon-wa"></use>
+                </svg></a><a class="header__phone" href="tel:88312199781">8 (831) 219-97-81</a></div><a class="header__callback" href="#" data-toggle="callback-popup">Заказать звонок</a>
+          </div>
+        </div>
+      </div>
+      <div class="header__row header__row--bottom">
+        <div class="header__cell header__cell--small header__cell--catalog">
+          <div class="header__catalog"> <a class="header__catalog-btn" href="#"><img class="header__catalog-icon" src="img/svg/icon-catalog.svg" alt="">
+              <div class="header__catalog-name">Каталог</div></a>
+            <p class="header__catalog-note">Более 3000 товаров</p>
+          </div>
+        </div>
+        <div class="header__cell header__cell--menu">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="mobile-hidden"><a class="header__nav-link" href="#">Акции</a></li>
+              <li> <a class="header__nav-link" href="#">доставка и Установка</a></li>
+              <li> <a class="header__nav-link" href="#">Оплата</a></li>
+              <li> <a class="header__nav-link" href="#">Сертификаты</a></li>
+              <li> <a class="header__nav-link" href="#">О нас</a></li>
+              <li> <a class="header__nav-link" href="#">Контакты</a></li>
+              <li class="mobile-visible"><a class="btn btn--transp btn--small" href="#" data-toggle="callback-popup">Заказать звонок</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__cell header__cell--small header__cell--links">
+          <div class="header__links"><a class="header__links-item" href="#" data-count="3"><img class="header__links-icon" src="img/svg/icon-compare.svg" alt=""></a><a class="header__links-item" href="#"><img class="header__links-icon" src="img/svg/icon-favorites.svg" alt=""></a><a class="header__links-item header__links-item--cart" href="#" data-toggle="fly-cart" data-count="14"><img class="header__links-icon" src="img/svg/icon-cart.svg" alt=""></a><a class="header__links-item" href="#"><img class="header__links-icon" src="img/svg/icon-user.svg" alt=""></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="popup js-drop" id="callback-popup">
+      <div class="popup__inner"> 
+        <svg class="popup__closer js-popup-close">
+          <use xlink:href="img/sprites/sprite.svg#icon-closer"></use>
+        </svg>
+        <div class="popup__title">Заполните данные и мы свяжемся с вами в рабочее время и ответим на все интересующие вопросы</div>
+        <form class="popup__form js-form">
+          <div class="popup__form-line">
+            <input class="styled-input" type="text" placeholder="Имя*" required>
+          </div>
+          <div class="popup__form-line">
+            <input class="styled-input" type="tel" placeholder="Телефон*" required>
+          </div>
+          <div class="popup__checkbox">
+            <div class="styled-checkbox"> 
+              <input class="styled-checkbox__input" type="checkbox" checked required id="user-agree">
+              <label class="styled-checkbox__label" for="user-agree">Даю свое согласие на обработку персональных данных</label>
+            </div>
+          </div>
+          <div class="popup__btn"> 
+            <button class="btn btn--green" type="submit">Заказать звонок</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+  </body>
+</html>
