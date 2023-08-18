@@ -114,6 +114,7 @@
                 flex-direction: row;
                 opacity: 1;
                 visibility: visible;
+                pointer-events: all;
             }
         }
         &--contacts {
@@ -251,12 +252,19 @@
         }
 
         &-text {
+            color: #222427;
             /* Text/15 reg */
             font-family: 'TT Norms Pro';
             font-size: 15px;
             font-style: normal;
             font-weight: 400;
             line-height: 130%; /* 19.5px */
+            text-decoration: none;
+            transition: color .3s;
+
+            &:hover {
+                color: #8BBF1F;
+            }
         }
     }
 

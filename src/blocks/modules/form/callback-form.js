@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
+    submitButton.addEventListener('click', function () {
+      validateForm(form)
+    });
+
+
     inputs.forEach(function (input) {
       input.addEventListener('input', function () {
         validateInput(input);
@@ -59,4 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+
+  
 });
